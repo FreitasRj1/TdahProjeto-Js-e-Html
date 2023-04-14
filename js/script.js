@@ -17,3 +17,16 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";
 }
+
+// volar ao topo
+var scrollTop = function() {
+    window.scrollTo(0, 0);}
+
+// scrollar para div
+function scrollToDiv() {
+    var div = document.getElementsByClassName("space");
+    window.scrollTo({
+      top: div.offsetTop,
+      behavior: "smooth"
+    });
+  }
