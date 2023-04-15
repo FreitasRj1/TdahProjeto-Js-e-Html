@@ -30,3 +30,12 @@ function scrollToDiv() {
       behavior: "smooth"
     });
   }
+
+  // usar nome do usuário
+window.onload = function() {
+  var userName = prompt("Por favor, digite seu nome:");
+  if (userName) { 
+    document.getElementById("bemVindo").innerHTML = "Seja bem vindo, " + userName + "!"; 
+    console.log("O nome do usuário é " + userName)
+  }
+}
